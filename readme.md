@@ -1,4 +1,4 @@
-#bonaparte-starter-html
+#bonaparte-starter-vanilla
 
 ### Setup
 ```
