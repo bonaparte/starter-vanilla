@@ -1,0 +1,11 @@
+{
+  "name": "bonaparte-starter-html",
+  "version": "0.0.1",
+  "description": "A HTML starter Bonaparte app",
+  "keywords": [],
+  "author": { 
+    "name" : "Peran Osborn",
+    "email" : "peran.osborn@dowjones.com"
+  },
+  "license": "ISC",
+}

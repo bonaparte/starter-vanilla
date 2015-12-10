@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Bonaparte Starter vanilla</title>
+      <link rel="stylesheet" href="./bonaparte/dj-bonaparte.css">
+      <style type="text/css">#wrapper,
+         #main {
+            height: 100%;
+         }
+         .header {
+            padding: 0 !important;
+            padding-left: 1rem !important;
+         }
+         /* This if a fix for issues https://github.com/dowjones/bonaparte/issues/8 */
+         bonaparte-button.ui.button.labeled.icon.active {
+            color: #425CBD;
+         }
+      </style>
+   </head>
+   <body>
+      <bonaparte-toolbar id="main" position="top">
+         <aside class="dark">
+            <div class="header">Bonaparte Starter vanilla</div>
+         </aside>
+         <bonaparte-toolbar id="left-toolbar" position="left">
+            <aside>
+               <div class="buttons">
+                  <bonaparte-button class="ui icon button labeled marginless transparent" action="click" target="#settings-panel" target-open="true" toggle="open"><i class="tune icon"></i>Project Settings</bonaparte-button>
+               </div>
+               <div class="buttons">
+                  <bonaparte-button class="ui icon button labeled marginless transparent active" action="click" target="#left-toolbar" target-open="true" toggle="open"><i class="help-outline icon"></i>Help</bonaparte-button>
+               </div>
+            </aside>
+            <div>
+               <bonaparte-scroll>
+                  <div>
+                     <div class="ui container">
+                        <h1>This is an H1</h1>
+                        <img class="ui fluid image" src="https://placeholdit.imgix.net/~text?txtsize=56&amp;txt=Fluid%20Image&amp;w=1000&amp;h=500">
+                        <p>Caption here</p>
+                     </div>
+                  </div>
+               </bonaparte-scroll>
+               <bonaparte-panel class="panel" id="settings-panel" position="left" open="false">
+                  <bonaparte-scroll>
+                     <div>
+                        <h4>Project Settings</h4>
+                     </div>
+                  </bonaparte-scroll>
+               </bonaparte-panel>
+            </div>
+         </bonaparte-toolbar>
+      </bonaparte-toolbar>
+      <script src="./bonaparte/dj-bonaparte.js"></script>
+   </body>
+</html>
