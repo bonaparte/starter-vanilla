@@ -2,56 +2,68 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8">
-      <title>Bonaparte Starter vanilla</title>
-      <link rel="stylesheet" href="./bonaparte/dj-bonaparte.css">
-      <style type="text/css">#wrapper,
-         #main {
-            height: 100%;
-         }
-         .header {
-            padding: 0 !important;
-            padding-left: 1rem !important;
-         }
-         /* This if a fix for issues https://github.com/dowjones/bonaparte/issues/8 */
-         bonaparte-button.ui.button.labeled.icon.active {
-            color: #425CBD;
-         }
-      </style>
+      <title>bonaparte-starter-vanilla</title>
+      <link rel="stylesheet" href="./bonaparte-starter-build/bonaparte.css">
    </head>
-   <body>
-      <bonaparte-toolbar id="main" position="top">
-         <aside class="dark">
-            <div class="header">Bonaparte Starter vanilla</div>
-         </aside>
-         <bonaparte-toolbar id="left-toolbar" position="left">
-            <aside>
-               <div class="buttons">
-                  <bonaparte-button class="ui icon button labeled marginless transparent" action="click" target="#settings-panel" target-open="true" toggle="open"><i class="tune icon"></i>Project Settings</bonaparte-button>
-               </div>
-               <div class="buttons">
-                  <bonaparte-button class="ui icon button labeled marginless transparent active" action="click" target="#left-toolbar" target-open="true" toggle="open"><i class="help-outline icon"></i>Help</bonaparte-button>
-               </div>
+   <body class="napoleon">
+      <div id="wrapper" style="height: 100%;">
+         <bonaparte-toolbar id="main" class="small" data-position="top" style="height:100%;">
+            <aside class="dark">
+               <div class="ui block" style="color:#fff;">Bonaparte Starter React</div>
+               <a class="ui icon button marginless transparent" href="https://github.com/bonaparte/starter-vanilla" target="_blank" ><i class="github icon"></i></a>
             </aside>
-            <div>
+            <bonaparte-toolbar id="left-toolbar" data-position="left" data-open="false">
+               <aside style="overflow:hidden;">
+                  <div class="buttons">
+                     <bonaparte-button class="ui icon button labeled marginless transparent" data-action="click" data-target="#settings-panel" data-target-open="true" data-toggle="open">
+                        <i class="tune icon"></i>
+                        Project Settings
+                     </bonaparte-button>
+                  </div>
+                  <div class="buttons">
+                     <bonaparte-button class="ui icon button labeled marginless transparent" data-action="click" data-target="#left-toolbar" data-target-open="true" data-toggle="open">
+                        <i class="help-outline icon"></i>
+                        Help
+                     </bonaparte-button>
+                  </div>
+               </aside>
                <bonaparte-scroll>
-                  <div>
+                  <div style="margin-right: -15px; padding-right: 15px;">
                      <div class="ui container">
-                        <h1>This is an H1</h1>
-                        <img class="ui fluid image" src="https://placeholdit.imgix.net/~text?txtsize=56&amp;txt=Fluid%20Image&amp;w=1000&amp;h=500">
-                        <p>Caption here</p>
+                        <h1>Bonaparte</h1>
+                        <div class="ui grid">
+                           <div class="ten wide column">
+                              <p>Bonaparte is the stage name of Berlin-based Swiss electronic rock songwriter and producer Tobias Jundt. Jundt is the only permanent member in the studio, collaborating with a changing cast of live musicians and performers when touring. Since 2006 Bonaparte performed over 500 shows worldwide a.o. in Europa, China, Russia, New Zealand or the USA.[1]</p>
+                              <p>The band is characterized by their expressive critically acclaimed live performances. German newspaper Der Tagesspiegel describes the band as "A multi-ethnic group ruled by the party-Kaiser; a trash circus unleashed".[2]</p>
+                              <p>The band is also known for its celebration of hedonism. Typical are a few lines from the album Too Much: "You know Tolstoy/I know Playboy [...]/You know politics/I know party-chicks [...]/You know too much too much." The Berliner Zeitung describes the band as "analoge Bohème," whilst the GZB makes reference to them as the best band in the world on a short track entitled "I want to party with the Bonaparte."[3]</p>
+                              <p class="small">[1] Bonaparte: Live History. In: bonaparte.cc.
+                              [2] Oberländer, Jan (28 October 2008). "Bonaparte: Blut, Schweiß und Würstchen". Der Tagesspiegel (in German).
+                              [3] Fust, Boris (8 October 2008). "Die analoge Bohème". Berliner Zeitung (in German). Archived from the original on 17 October 2008.</p>
+                           </div>
+                           <div class="six wide column">
+                              <img class="ui fluid image" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Bonaparte8.jpg">
+                              <p class="small"><a href="www.arne-mueseler.de" target="_blank">© Arne Müseler / arne-mueseler.de / CC-BY-SA-3.0</a></p>
+                           </div>
+                        </div>
                      </div>
                   </div>
+                  <bonaparte-panel class="panel" id="settings-panel" data-position="left" data-open="false">
+                     <bonaparte-scroll>
+                        <div style="margin-right: -15px; padding-right: 15px;">
+                           <h4>Bonaparte Panel</h4>
+                        </div>
+                        <div class="scrollbar" style="opacity: 0.01;">
+                           <div class="slider" style="height: 100%; top: 0px;"></div>
+                        </div>
+                     </bonaparte-scroll>
+                  </bonaparte-panel>
+                  <div class="scrollbar">
+                     <div class="slider" style="height: 88.2902%; top: 0px;"></div>
+                  </div>
                </bonaparte-scroll>
-               <bonaparte-panel class="panel" id="settings-panel" position="left" open="false">
-                  <bonaparte-scroll>
-                     <div>
-                        <h4>Project Settings</h4>
-                     </div>
-                  </bonaparte-scroll>
-               </bonaparte-panel>
-            </div>
+            </bonaparte-toolbar>
          </bonaparte-toolbar>
-      </bonaparte-toolbar>
-      <script src="./bonaparte/dj-bonaparte.js"></script>
+      </div>
+      <script src="./bonaparte-starter-build/bonaparte.js"></script>
    </body>
 </html>

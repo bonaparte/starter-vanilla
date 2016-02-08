@@ -7,5 +7,9 @@
     "name" : "Peran Osborn",
     "email" : "peran.osborn@dowjones.com"
   },
+  "contributors": [{
+    "name": "Dov Friedman",
+    "email": "dov@dovfriedman.com"
+  }],
   "license": "ISC",
 }
