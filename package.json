@@ -2,10 +2,25 @@
   "name": "bonaparte-starter-vanilla",
   "version": "0.0.1",
   "description": "A HTML starter Bonaparte app",
-  "keywords": [],
-  "author": { 
+  "keywords": [
+    "bonaparte",
+		"bonaparte-starter",
+		"ux",
+		"ui",
+		"library",
+		"framework",
+		"webcomponents",
+		"component",
+		"front-end"
+	],
+  "author": {
     "name" : "Peran Osborn",
     "email" : "peran.osborn@dowjones.com"
   },
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bonaparte/starter-vanilla.git"
+	},
   "license": "ISC",
 }
